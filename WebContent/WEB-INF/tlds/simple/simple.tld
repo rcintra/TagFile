@@ -1,0 +1,27 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" 
+  version="2.0">
+  	<tlib-version>1.2</tlib-version>
+	<uri>simpleTags</uri>
+	
+  	<tag>
+  		<description></description>
+  		<name>simple1</name>
+  		<tag-class>br.rcintra.scwcd.tag.simple.SimpleTagTest1</tag-class>
+  		<body-content>scriptless</body-content>
+  	</tag>
+  	
+  	<tag>
+		<description>takes an attribute and iterates over body</description>
+		<name>simple2</name>
+		<tag-class>br.rcintra.scwcd.tag.simple.SimpleTagTest2</tag-class>
+		<body-content> scriptless </body-content>
+		<attribute>
+			<name>movieList</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>
